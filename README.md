@@ -1,1 +1,1 @@
-# web-dev-study-guide
+# prework-study-guide
