@@ -15,13 +15,51 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
 
-    <main>
+    <main class="container">
       <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <p><b>html</b> defines the semantic structure of a website.</p>
+        <ul>
+          <li>The <b>head</b> element contains information about the webpage.</li>
+          <li>The <b>body</b> element contains the visible part shown to the user.</li>
+        </ul>
+      </section>
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <p><b>css</b> specifies how elements are style and laid out on a website.</p>
+        <ul>
+          <li>use a <b>link</b> tag inside the <b>head</b> element to point to external <i>.css</i> file using the <i>href</i> attribute.</li>
+        </ul>
+      </section>
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <p><b>git and github</b> allows for software development collaboration and source code management</p>
+        <ul>
+          <li><b>git status</b> checks the branch we are currently on.</li>
+          <li><b>git checkout -b <i>branch-name</i></b> creates a new branch and switches to it.</li>
+          <li><b>git add . or git add -A</b> will add all the files and changes to the staging area to be commited</li>
+          <li><b>git commit -m "commit message"</b> will commit all the changes and files currently in the staging area.</li>
+          <li><b>git pull origin main</b> will pull the remote repository and tell if there is anything new in it.</li>
+          <li><b>git push origin <i>branch-name</i></b> can be use to push the new branch and its changes to the remote repository</li>
+          <li><b>pull request</b> can be created to have your changes and branch review and added to main (live) branch (note: in a real world project this process has other developers reviewing your code and many stages are involved)</li>
+        </ul>
+      </section>
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <p><b>JavaScript</b> adds interactivity to a website.</p>
+        <ul>
+          <li>use a <b>script</b> tag to point to an external <i>.js</i> file using the <i>src</i> attribute. Usually place at the end, before the closing body tag.</li>
+          <li>JavaScript has 7 data types: <i>String, Number, Boolean, null, undefined, Symbol and Objects (special objects: Array, Function)</i></li>
+          <li>All primitive types, except null, can be tested by the typeof operator. typeof null returns 'object', so one has to use === null to test for null.</li>
+        </ul>
+      </section>
     </main>
 
     <!--The <footer> appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.-->
     <footer>
       <p>I can code!</p>
+      <p class="text-right">Prework Study Guide: by <i>Jose W. Rivas</i></p>
     </footer>
   </body>
 </html>
