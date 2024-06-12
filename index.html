@@ -4,37 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 
     <title>Prework Study Guide</title>
   </head>
   <body>
     <!--The <header> appears at the top of the page and usually contains a navigation menu and/or introductory content.-->
-    <header class="container" id="top">
+    <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img id="logo-image" src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
 
     <main class="container">
       <!-- Student code goes here -->
       <section class="card" id="html-section">
-        <h2>HTML</h2>
-        <p><b>html</b> defines the semantic structure of a website.</p>
+        <h2>HTML: <span class="smaller-text">defines the semantic structure of a website.</span></h2>
+        
         <ul>
           <li>The <b>head</b> element contains information about the webpage.</li>
           <li>The <b>body</b> element contains the visible part shown to the user.</li>
+          <li>The <b>header</b> element usually houses the website navigation links.</li>
+          <li>The <b>main</b> element usualy houses the main content of a page.</li>
+          <li>The <b>footer</b> element usualy houses copyright information.</li>
+          <li>HTML Elements have a display of <b>block</b> or <b>inline</b> by default</li>
+          <li><b>Block level elements</b> always start on a new line and always take the full width available.</li>
+          <li><b>Inline level elements</b> does not start on a new line and only take as much width as necessary.</li>
+          <li>Examples of block elements are: <i>div, p, header, main, footer, ul, li, etc.</i></li>
+          <li>Examples of inline elements are: <i>span, a, img, button, etc.</i></li>
+          <li>Note: You cannot add a padding or margin to an inline level element.</li>
+          
         </ul>
       </section>
       <section class="card" id="css-section">
-        <h2>CSS</h2>
-        <p><b>css</b> specifies how elements are style and laid out on a website.</p>
+        <h2>CSS: <span class="smaller-text">specifies how elements are style and laid out on a website.</span></h2>
         <ul>
+          <li>All <b>browsers</b> add intital <i>default</i> styles to all elements.</li>
           <li>use a <b>link</b> tag inside the <b>head</b> element to point to external <i>.css</i> file using the <i>href</i> attribute.</li>
+          <li>You can <b>select</b> html element to style with css in a few ways including by <i>tag name</i>, by <i>.class</i>, by <i>#id</i>, and we also have <i>advance selectors</i> such as selectors that use an attribute type and parameterized value (ex. [href$='.com'])</li>
+          <li>You can <b>reset</b> default margin, padding and other rules to elements using the <i>universal selector</i> (*)</li>
+          <li>A <b>margin</b> indicates how much space we want around the outside of an element.</li>
+          <li>A <b>padding</b> indicates how much space we want around the content inside an element.</li>
+          <li>CSS rules that appear later in a css file can <b>override</b> rules that appear earlier.</li>
+          <li>CSS rules with more <b>specificity</b> take precedence over other rules.</li>
+          <li>Note: CSS doest allow single-line comments, it only allows multi-line comments (this can be source of unpredictable errors)</li>
         </ul>
       </section>
       <section class="card" id="git-section">
-        <h2>Git</h2>
-        <p><b>git and github</b> allows for software development collaboration and source code management</p>
+        <h2>Git and Github: <span class="smaller-text">allows for development collaboration and source code management</span></h2>
         <ul>
           <li><b>git status</b> checks the branch we are currently on.</li>
           <li><b>git checkout -b <i>branch-name</i></b> creates a new branch and switches to it.</li>
@@ -46,11 +62,10 @@
         </ul>
       </section>
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
-        <p><b>JavaScript</b> adds interactivity to a website.</p>
+        <h2>JavaScript: <span class="smaller-text">adds interactivity to a website.</span></h2>
         <ul>
           <li>use a <b>script</b> tag to point to an external <i>.js</i> file using the <i>src</i> attribute. Usually place at the end, before the closing body tag.</li>
-          <li>JavaScript has 7 data types: <i>String, Number, Boolean, null, undefined, Symbol and Objects (special objects: Array, Function)</i></li>
+          <li>JavaScript has 7 <b>data types</b>: <i>String, Number, Boolean, null, undefined, Symbol and Objects (special objects: Array, Function)</i></li>
           <li>All primitive types, except null, can be tested by the typeof operator. typeof null returns 'object', so one has to use === null to test for null.</li>
         </ul>
       </section>
@@ -59,7 +74,7 @@
     <!--The <footer> appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.-->
     <footer>
       <p>I can code!</p>
-      <p class="text-right">Prework Study Guide: by <i>Jose W. Rivas</i></p>
+      <p>Prework Study Guide: by <i>Jose W. Rivas</i></p>
     </footer>
   </body>
 </html>
