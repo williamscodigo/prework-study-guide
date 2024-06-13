@@ -69,10 +69,12 @@
           <li>All primitive types, except null, can be tested by the <b>typeof operator</b>. typeof null returns 'object', so one has to use === null to test for null.</li>
           <li>Conceptually, <b>undefined</b> indicates the absence of a value (use as part of core language defenitions, automatically assign/return in different situations), while <b>null</b> indicates the absence of an object (purposely assign/return by developers)</li>
           <li> <b>NaN</b> ( <i>'Not a Number'</i> ) is a special kind of number value that's typically encountered when the result of an arithmetic operation cannot be expressed as a number.</li>
-          <li>With <b>BigInts</b> you can safely store and operate on large integers even beyond the safe integer limit of Numbers datatype ( <i>Number.MAX_SAFE_INTEGER || 2<sup>253</sup> - 1</i> )</li>
+          <li>With <b>BigInts</b> you can safely store and operate on large integers even beyond the safe integer limit of Numbers datatype ( <i>Number.MAX_SAFE_INTEGER || 2<sup>253</sup> - 1</i> ) (note: Number datatype also have a min for integers and a min and max for floating point values)(BigInt numbers usually have an 'n' at the end like 1000n or 0n)</li>
           <li>A <b>BigInt</b> is not strictly equal to a <b>Number</b> with the same mathematical value, but it is loosely equal.</li>
           <li>There are many instances were <b>undefined</b> is use such as implicitly returns ( <i>return;</i> ), Accessing a nonexistent object property <i>( obj.iDontExist )</i>, implicitly initialization ( <i>let x;</i> ) </li>
-          <li>Note: Remember that <b>primitive types are passed by value</b>. While <b>objects are passed by reference.</b> ( <i>That is when you store/assign an object to a variable or passed as an argument/parameter in a function, you varaible contains a reference to the object in memory NOT the actual object.</i> )</li>
+          <li>Note: Remember that <b>primitive types are passed by value</b>. While <b>objects are passed by reference.</b> ( <i>That is when you store/assign an object to a variable or passed as an argument/parameter in a function, that varaible contains a reference to the object in memory NOT the actual object.</i> )</li>
+          <li>You can use <b>console.log()</b> to log code/messages to the console for debugging purposes, to view this log messages you must open the console tab in <i>Chrome DevTools</i>.</li>
+          <li>JavaScript uses <b>type coercion</b> in Boolean contexts. <b>falsy</b> values include <i>(false, 0, -0, NaN, "", undefined, null).</i> All other values are <b>thruty</b> (Example: <i>true, any positive or negative number not equal to 0 like 5, -123, Infinity, etc, a string with 1 or more characters including "0", all objects.</i> )</li>
         </ul>
       </section>
     </main>
@@ -82,5 +84,7 @@
       <p>I can code!</p>
       <p>Prework Study Guide: by <i>Jose W. Rivas</i></p>
     </footer>
+
+    <script src="./assets/main.js"></script>
   </body>
 </html>
