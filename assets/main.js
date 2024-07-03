@@ -52,19 +52,19 @@ listTopics();
 
 
 /*
-note: we will get an error if we try to access a value in the wrong scope.
+javascript - scope - simple example
 
 function sayHello() {
     console.log("Hello World!");
 }
 
 if(true) {
-  const log =  () => console.log("logging");
-  log();
+  const talk = () => console.log("logging");
+  talk();      
   sayHello();
 }else{
- log();
+ talk();    //note: this line can't be reach
 }
 
-log();
+talk();    //note: this line give us an error since talk is not define is this scope.
 */
