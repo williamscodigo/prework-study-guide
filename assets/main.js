@@ -63,7 +63,7 @@ if(true) {
   talk();      
   sayHello();
 }else{
- talk();    //note: this line can't be reach
+ talk();    //note: this line can't be reach (true) and if it did it will throw an error - talk is not define in this scope
 }
 
 talk();    //note: this line give us an error since talk is not define is this scope.
