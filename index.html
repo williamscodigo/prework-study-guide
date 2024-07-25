@@ -31,7 +31,7 @@
           <li><b>Inline level elements</b> does not start on a new line and only take as much width as necessary.</li>
           <li>Examples of block elements are: <i>div, p, header, main, footer, ul, li, etc.</i></li>
           <li>Examples of inline elements are: <i>span, a, img, button, etc.</i></li>
-          <li>Note: You cannot set a height or width to an inline level element. (unless you change it to <b>display: inline-block</b> <i>also, padding and margin for top and bottom is respected</i> )</li>
+          <li>Note: You cannot set a height or width to an inline level element. (unless you change it to <b>display: inline-block</b> <i>also, padding and margin for top and bottom is ignore</i> )</li>
           
         </ul>
       </section>
@@ -43,23 +43,31 @@
           <li>You can <b>select</b> html element to style with css in a few ways including by <i>tag name</i>, by <i>.class</i>, by <i>#id</i>, and we also have <i>advance selectors</i> such as selectors that use an attribute type and parameterized value (ex. [href$='.com'])</li>
           <li>You can <b>reset</b> default margin, padding and other rules to elements using the <i>universal selector</i> (*)</li>
           <li>A <b>margin</b> indicates how much space we want around the outside of an element.</li>
-          <li>A <b>padding</b> indicates how much space we want around the content inside an element.</li>
+          <li>A <b>padding</b> indicates how much space we want around the content inside an element (<i>space between the element's content and the element's border</i>.)</li>
           <li>CSS rules that appear later in a css file can <b>override</b> rules that appear earlier.</li>
           <li>CSS rules with more <b>specificity</b> take precedence over other rules.</li>
           <li>Note: CSS doest allow single-line comments, it only allows multi-line comments (this can be source of unpredictable errors)</li>
-          <li>Note: You cannot set a height or width to an inline level element. (unless you change it to <b>display: inline-block</b> <i>also, padding and margin for top and bottom is respected</i> )</li>
+          <li>Note: You cannot set a height or width to an inline level element. (unless you change it to <b>display: inline-block</b> <i>also, padding and margin for top and bottom is ignore</i> )</li>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git and Github: <span class="smaller-text">allows for development collaboration and source code management</span></h2>
         <ul>
+          <li><b>git config --global user.name 'your-name'</b> set the name that will be attached to your commits</li>
+          <li><b>git config --global user.email 'your-email'</b> set the email that will be attached to your commits</li>
+          <li><b>git config --global init.defualtBranch main</b> this will make any new local repositories initialized in this computer come with a root repository of 'main' <i>name for standard default main branch.</i> </li>
+          <li><b>git init <i>'project-name'</i></b> initialized/creates a new local repository in the current directory/folder</li>
           <li><b>git status</b> checks the branch we are currently on, are there any local changes to stage and commit.</li>
-          <li><b>git checkout -b <i>branch-name</i></b> creates a new branch and switches to it.</li>
+          <li><b>git checkout -b <i>'branch-name'</i></b> creates a new branch and switches to it. <i>better to do 1 thing at a time</i></li>
+          <li><b>git branch <i>'branch-name'</i></b> [<i>optionally: ref-branch-name</i>] will create a new branch</li>
+          <li><b>git checkout <i>'branch-name'</i></b> will switch/move working directory to specify branch</li>
+          <li><b>git branch -d <i>'branch-name'</i></b> will delete the specify branch.</li>
           <li><b>git add . or git add -A</b> will add all the files and changes to the staging area to be commited</li>
-          <li><b>git commit -m "commit message"</b> will commit all the changes and files currently in the staging area.</li>
+          <li><b>git commit -m 'commit message'</b> will commit all the changes and files currently in the staging area.</li>
+          <li><b>git remote add origin <i>'remote-repository-address'</i></b> will connect your local repository to the remote (github) repository</li>
           <li><b>git pull origin main</b> will pull the remote repository and tell if there is anything new in it.</li>
-          <li><b>git push origin <i>branch-name</i></b> can be use to push the new branch and its changes to the remote repository</li>
-          <li><b>pull request</b> can be created to have your changes and branch review and added to main branch (note: in a real world project this process has other developers reviewing your code)</li>
+          <li><b>git push origin <i>'branch-name'</i></b> can be use to push the new branch and its changes to the remote repository</li>
+          <li>A <b>pull request</b> can be created to have your changes and branch review and added to main branch (note: in a real world project this process has other developers reviewing your code)</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
