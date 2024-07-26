@@ -18,6 +18,27 @@
     <main class="container">
       <!-- Student code goes here -->
       <section class="card" id="html-section">
+        <h2>Linux Commands: <span class="smaller-text">can be used to interact with the operating system through the command-line interface.</span></h2>
+        
+        <ul>
+          <li><b>ls</b> list current folder files and directories.</li>
+          <li><b>ls -a</b> list corrent folder files and directories ( <i>show hidden files</i> )</li>
+          <li><b>pwd</b> print the path of current directory.</li>
+          <li><b>cd ['directory-name|path']</b> navigate through directories</li>
+          <li><b>cd ..</b> move up one directory level</li>
+          <li><b>mkdir</b> create a new directory</li>
+          <li><b>rm ['file-name']</b> remove a file</li>
+          <li><b>rm -r ['directory-name']</b> remove a directory recursively</li>
+          <li><b>rm -rf ['directory-name']</b> remove a directory recursively (without comfirmation)</li>
+          <li><b>cp ['source-file'] ['destination-file']</b> copy the content of one file to another file</li>
+          <li><b>cp -r ['source-directory'] ['destination-directory']</b> recursively copy the content of one directory to another directory</li>
+          <li><b>mv ['source-file'] ['destination-file']</b> move or rename files or directories</li>
+          <li><b>touch ['file-name']</b> create a new file</li>
+          <li><b>cat ['file-name']</b> show the content of a file</li>
+          <li><b>nano ['file-name']</b> open or create a file using the nano text editor ( <i>note: code ['file-name'] will open the file using vs code text editor - new window</i> )</li>
+        </ul>
+      </section>
+      <section class="card" id="html-section">
         <h2>HTML: <span class="smaller-text">defines the semantic structure of a website.</span></h2>
         
         <ul>
@@ -55,8 +76,11 @@
         <ul>
           <li><b>git config --global user.name 'your-name'</b> set the name that will be attached to your commits</li>
           <li><b>git config --global user.email 'your-email'</b> set the email that will be attached to your commits</li>
+          <li><b>git config --get user.name</b> show setup user name</li>
+          <li><b>git config --get user.email</b> show setup user email</li>
           <li><b>git config --global init.defualtBranch main</b> this will make any new local repositories initialized in this computer come with a root repository of 'main' <i>name for standard default main branch.</i> </li>
           <li><b>git init <i>'project-name'</i></b> initialized/creates a new local repository in the current directory/folder</li>
+          <li><b>git clone 'project-url'</b> clone a project from a remote repository</li>
           <li><b>git status</b> checks the branch we are currently on, are there any local changes to stage and commit.</li>
           <li><b>git checkout -b <i>'branch-name'</i></b> creates a new branch and switches to it. <i>better to do 1 thing at a time</i></li>
           <li><b>git branch <i>'branch-name'</i></b> [<i>optionally: ref-branch-name</i>] will create a new branch</li>
@@ -65,9 +89,12 @@
           <li><b>git add . or git add -A</b> will add all the files and changes to the staging area to be commited</li>
           <li><b>git commit -m 'commit message'</b> will commit all the changes and files currently in the staging area.</li>
           <li><b>git remote add origin <i>'remote-repository-address'</i></b> will connect your local repository to the remote (github) repository</li>
-          <li><b>git pull origin main</b> will pull the remote repository and tell if there is anything new in it.</li>
+          <li><b>git pull ['remote'|'origin main']</b> will pull the remote repository and merge curent branch with its upstream.</li>
+          <li><b>git fetch ['remote']</b> will fetch changes from the remote repository but will not update tracking branches</li>
+          <li><b>git fetch --prume ['remote']</b> will Locally remove ref/branches that were remove from the remote repository ( <i>example: after a pull request you get the option to safely remove that branch e.g feature/feature-name</i> )</li>
           <li><b>git push origin <i>'branch-name'</i></b> can be use to push the new branch and its changes to the remote repository</li>
-          <li>A <b>pull request</b> can be created to have your changes and branch review and added to main branch (note: in a real world project this process has other developers reviewing your code)</li>
+          <li><b>git merge 'branch-name'</b> will join specified branch into your current branch</li>
+          <li>A <b>pull request</b> can be created to have your changes and branch review and added to main branch (note: As a junior developer in a real world project this process has other developers (senior) reviewing your code and giving feedback)</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
